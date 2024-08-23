@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    outline: 1px solid red;
+}
+
+:root {
+    font-family: Montserrat, sans-serif;
+    --color-text: #160811;
+    --color-background: #221E22;
+    --color-primary: #7f63aa;
+    --color-secondary: #31263E;
+    --color-accent: #ECA72C;
+    --color-add-button: rgb(50, 255, 255);
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--color-background);
+}
+
+header {
+    background-color: var(--color-primary);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between; /* Pushes items to the far ends */
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+button { 
+    all: unset;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--color-add-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100px;
+    height: 10px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container {
+    margin: 2rem;
+    /* background-color:aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card-container {
+    background-color: var(--color-accent);
+    padding: 2rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-holder {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.delete-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 3rem;
+}
+
+.read-btn {
+    background-color: var(--color-primary);
+}
+
