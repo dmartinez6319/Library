@@ -1,5 +1,17 @@
 const myLibrary = [];
 
+const ADD_BUTTON = document.querySelector("#add-btn");
+const MODAL = document.querySelector("#book-modal");
+const CLOSE_BUTTON = document.querySelector(".exit-icon")
+
+ADD_BUTTON.addEventListener("click",() => {
+    MODAL.showModal();
+})
+
+CLOSE_BUTTON.addEventListener("click", () => {
+    MODAL.close();
+})
+
 function Book(author, pages, title, read) {
     this.author = author;
     this.pages = pages;
