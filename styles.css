@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 :root {
@@ -31,12 +31,12 @@ html, body {
     left: 45%;
     top: 20%;
     border: 0;
-    box-shadow: 0 0 1rem rgb(0 0 0 / .5)
+    box-shadow: 0 0 1rem rgb(0 0 0 / .5);
 }
 
 .login-overlay::backdrop {
     background: linear-gradient(45deg,blue,red);
-    opacity: 0.15;
+    opacity: .2;
 }
 
 
@@ -119,8 +119,9 @@ main {
     margin: 2rem;
     /* background-color:aquamarine; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2rem;
     gap: 1rem;
 }
@@ -128,7 +129,8 @@ main {
 .card-container {
     background-color: var(--color-accent);
     padding: 2rem;
-    width: 14rem;
+    /* width: 14rem; */
+    min-width: 14rem;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -137,7 +139,10 @@ main {
 .first-line {
     display: flex;
     justify-content: space-between;
+    
 }
+
+
 
 .btn-holder {
     margin-top: 1rem;
